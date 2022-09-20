@@ -1,10 +1,10 @@
 import React from 'react'
 
-const About = ({ src }) => {
+function About({ about, image }) {
   return (
     <aside>
-      <img src={src} alt='blog logo' />
-      <p>Linda is a beatiful smart woman who writes cool stuff in Spanish</p>
+      <img src={image} alt='blog logo' />
+      <p>{about}</p>
     </aside>
   )
 }
@@ -12,5 +12,6 @@ const About = ({ src }) => {
 export default About
 
 About.defaultProps = {
-  src: 'https://via.placeholder.com/215',
+  about: 'This blog is written by Linda.',
+  image: 'https://via.placeholder.com/215',
 }
